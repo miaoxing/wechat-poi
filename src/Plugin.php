@@ -50,6 +50,7 @@ class Plugin extends BasePlugin
 
         if ($ret['code'] !== 1) {
             $ret['message'] = '保存成功，但同步微信失败：' . $ret['message'];
+
             return $ret;
         }
 
@@ -61,6 +62,7 @@ class Plugin extends BasePlugin
         $ret = wei()->wechatPoi->delShop($shop);
         if ($ret['code'] !== 1) {
             $ret['message'] = '删除失败，微信返回：' . $ret['message'];
+
             return $ret;
         }
     }

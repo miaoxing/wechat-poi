@@ -49,7 +49,7 @@ class WechatPoi extends BaseService
         ],
         self::AVAILABLE_STATE_AUDIT_FAIL => [
             'text' => '审核驳回',
-        ]
+        ],
     ];
 
     public function addShop(Shop $shop)
@@ -101,7 +101,7 @@ class WechatPoi extends BaseService
     {
         $photoList = [];
         foreach ($shop['photo_list'] as $photo) {
-            $photo['photo_url'] =  wei()->wechatMedia->updateUrlToWechatUrl($photoList['photo_url']);
+            $photo['photo_url'] = wei()->wechatMedia->updateUrlToWechatUrl($photoList['photo_url']);
             $photoList[] = $photo;
         }
 
@@ -116,8 +116,8 @@ class WechatPoi extends BaseService
                     'introduction' => $shop['introduction'],
                     'open_time' => $shop['open_time'],
                     'avg_price' => $shop['avg_price'],
-                ]
-            ]
+                ],
+            ],
         ];
     }
 
