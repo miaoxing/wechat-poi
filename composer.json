@@ -1,0 +1,23 @@
+{
+  "name": "miaoxing/wechat-poi",
+  "description": "Miaoxing Wechat POI Plugin",
+  "keywords": [
+    "miaoxing", "wechat", "poi"
+  ],
+  "license": "MIT",
+  "require": {
+    "miaoxing/app": "dev-master@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Miaoxing\\WechatPoi\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MiaoxingTest\\WechatPoi\\": "tests"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
