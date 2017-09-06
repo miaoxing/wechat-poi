@@ -70,7 +70,7 @@ class Plugin extends BasePlugin
     public function onWechatPoiCheckNotify(WeChatApp $app, $user, $account)
     {
         /** @var Shop $shop */
-        $shop = wei()->shop()->find(['poi_id' => $app->getAttr('PoiId')]);
+        $shop = wei()->shop()->find(['wechat_poi_id' => $app->getAttr('PoiId')]);
         if (!$shop) {
             $this->logger->info('Unknown poi id', $app->getAttrs());
         }
