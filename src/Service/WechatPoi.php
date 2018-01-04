@@ -2,7 +2,7 @@
 
 namespace Miaoxing\WechatPoi\Service;
 
-use miaoxing\plugin\BaseService;
+use Miaoxing\Plugin\BaseService;
 use Miaoxing\Plugin\Constant;
 use Miaoxing\Shop\Service\Shop;
 use Wei\RetTrait;
