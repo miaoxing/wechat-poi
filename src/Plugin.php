@@ -2,7 +2,7 @@
 
 namespace Miaoxing\WechatPoi;
 
-use miaoxing\plugin\BasePlugin;
+use Miaoxing\Plugin\BasePlugin;
 use Miaoxing\Shop\Service\Shop;
 use Miaoxing\WechatPoi\Service\WechatPoi;
 use Wei\Request;
