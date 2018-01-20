@@ -23,7 +23,7 @@ class Plugin extends BasePlugin
     public function onPostAdminShopListFind(Request $req, array &$data)
     {
         foreach ($data as &$row) {
-            $row['available_state_text'] = wei()->wechatPoi->getConstantValue('available_state', $row['available_state'], 'text');
+            $row['available_state_text'] = wei()->wechatPoi->getConstValue('available_state', $row['available_state'], 'text');
         }
     }
 

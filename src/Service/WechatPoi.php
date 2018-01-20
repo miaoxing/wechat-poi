@@ -3,14 +3,14 @@
 namespace Miaoxing\WechatPoi\Service;
 
 use Miaoxing\Plugin\BaseService;
-use Miaoxing\Plugin\Constant;
+use Miaoxing\Plugin\ConstTrait;
 use Miaoxing\Shop\Service\Shop;
 use Wei\RetTrait;
 
 class WechatPoi extends BaseService
 {
     use RetTrait;
-    use Constant;
+    use ConstTrait;
 
     const AVAILABLE_STATE_NONE = 0;
 
