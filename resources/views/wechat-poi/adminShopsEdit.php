@@ -1,4 +1,4 @@
-<?= $block('js') ?>
+<?= $block->js() ?>
 <script>
   // 图片上传后同步到微信中
   $('.js-image-upload').on('fileuploaded', function (event, data) {
